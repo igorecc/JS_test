@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let l,
+        str_array,
+        str = prompt("Input string : ", "");
+
+      function compareNumbers(a, b) {
+        return a.length - b.length;
+      }
+      console.log(str);
+      str_array = str.split(" ");
+
+      str_array.sort(compareNumbers);
+      l = str_array.length;
+
+      console.log(str_array);
+      console.log(str_array[l - 1]);
+      console.log(str_array[l - 2]);
+      console.log(str_array[l - 3]);
+    </script>
+  </body>
+</html>

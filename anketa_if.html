@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstname = prompt("enter your firstname", "");
+      let name = prompt("enter your name", "");
+      let secondname = prompt("enter your secondname", "");
+      let age_days,
+        gender,
+        pens,
+        age = prompt("enter your age", "");
+      age_days = age * 365;
+      var male = confirm("Пол мужской?");
+      if (male) {
+        gender = "Мужской";
+        if (age >= 65) {
+          pens = "Да";
+        } else {
+          pens = "Нет";
+        }
+      } else {
+        gender = "Женский";
+        if (age >= 60) {
+          pens = "Да";
+        } else {
+          pens = "Нет";
+        }
+      }
+      alert(
+        "ФИО: " +
+          firstname +
+          " " +
+          name +
+          " " +
+          secondname +
+          "\n возраст,лет: " +
+          age +
+          "\n возраст,дней: " +
+          age_days +
+          "\n пол: " +
+          gender +
+          "\n пенсионный возраст: " +
+          pens
+      );
+      //alert("your age: " + age_days);
+      console.log(gender);
+    </script>
+  </body>
+</html>
